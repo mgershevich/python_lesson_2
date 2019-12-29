@@ -39,7 +39,7 @@ print(amount)
 Найти произведение ряда чисел от 1 до 10. Полученный результат вывести на экран.
 '''
 n = 1
-for i in range(2, 10):
+for i in range(2, 11):
     n *= i
 print(n)
 '''
@@ -107,5 +107,10 @@ print(maximum)
 
 Найти количество цифр 5 в числе
 '''
-inter_number = 59675
-print(str(inter_number).count('5'))
+inter_number = 595675
+count = 0
+while inter_number != 0:
+    if inter_number % 10 == 5:
+        count += 1
+    inter_number //= 10
+print(count)
